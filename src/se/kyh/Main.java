@@ -24,10 +24,14 @@ public class Main {
 
     private static void solve(int[][] board){
         //Loopa igenom alla rader och kolumner
-        //Kolla om det är en nolla på aktuell pos
-        //Loopa igenom alla värden från 1 till 9
-        //Kolla om man kan placera aktuellt värde
-        //på aktuell position
+        //  Kolla om det är en nolla på aktuell pos
+        //      Loopa igenom alla värden från 1 till 9
+        //          Kolla om man kan placera aktuellt värd på aktuell position
+        //              Om ja, placera aktuellt värde
+        //                  anropa solve
+        //                      Ta bort aktuellt värde
+        //      Gör return
+        // Skriv ut lösning
     }
 
     public static void main(String[] args) {
@@ -43,5 +47,6 @@ public class Main {
         System.out.println(possible(board, 4, 4, 2));
         System.out.println(possible(board, 4, 4, 1));
         System.out.println(possible(board, 5, 6, 3));
+        System.out.println(possible(board, 0, 0, 5));
     }
 }
